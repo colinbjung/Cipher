@@ -1,6 +1,7 @@
 # Author: Colin
 # Python text-based caesar and substitution cipher
 
+from art import logo
 
 SYMBOLS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'
 SUBCIPHER = 'niBTNZOydQgqbhWwUGmpYxIHLuPSavDjMkRzKFCVfroXEclAeJts'
@@ -92,6 +93,7 @@ def caesarcipher(mode, message, key):
   
 # Loop allows user to play again
 while True:
+  print(logo)
   print(getInfo())
   playAgain = input("Would you like to continue playing? (y)es or (n)o: ")
   if playAgain == 'n':
